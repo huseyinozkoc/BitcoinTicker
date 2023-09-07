@@ -1,15 +1,18 @@
 package com.huseyinozkoc.bitcointicker.presentation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.huseyinozkoc.bitcointicker.R
+import com.huseyinozkoc.bitcointicker.common.viewBinding
+import com.huseyinozkoc.bitcointicker.databinding.FragmentHomePageBinding
 
 
 class HomePage : Fragment() {
 
+    private val binding by viewBinding(FragmentHomePageBinding::bind)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

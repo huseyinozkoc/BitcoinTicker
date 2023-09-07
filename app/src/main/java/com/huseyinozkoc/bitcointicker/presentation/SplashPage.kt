@@ -1,16 +1,13 @@
 package com.huseyinozkoc.bitcointicker.presentation
 
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.lifecycleScope
+import androidx.fragment.app.Fragment
 import com.huseyinozkoc.bitcointicker.R
 import com.huseyinozkoc.bitcointicker.common.viewBinding
 import com.huseyinozkoc.bitcointicker.databinding.FragmentSplashPageBinding
-import kotlinx.coroutines.Dispatchers
 
 
 class SplashPage : Fragment() {
@@ -30,9 +27,7 @@ class SplashPage : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.appLogo.setOnClickListener {
 
-        }
 
     }
 
