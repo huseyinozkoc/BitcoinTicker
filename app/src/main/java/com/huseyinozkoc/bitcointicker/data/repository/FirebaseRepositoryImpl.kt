@@ -2,6 +2,7 @@ package com.huseyinozkoc.bitcointicker.data.repository
 
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
 import com.huseyinozkoc.bitcointicker.common.Resource
 import com.huseyinozkoc.bitcointicker.domain.repository.FirebaseRepository
@@ -34,4 +35,25 @@ class FirebaseRepositoryImpl @Inject constructor(
     }
 
     override fun signOut() = firebaseAuth.signOut()
+
+
+    override fun getFirebaseUserUid(): Flow<String> = flow {
+        firebaseAuth.currentUser?.uid?.let {
+            emit(it)
+        }
+    }
+
+    override fun isCurrentUserExist(): Flow<Boolean> = flow {
+        emit(firebaseAuth.currentUser != null)
+    }
+
+    override fun getCurrentUser(): Flow<Resource<FirebaseUser>> = flow {
+        emit(Resource.Loading)
+
+        firebaseAuth.currentUser?.let {
+            emit(Resource.Success(it))
+        }
+    }.catch {
+        emit(Resource.Error(it))
+    }
 }
