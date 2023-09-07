@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInPage"
-        android:name="com.huseyinozkoc.bitcointicker.presentation.SignInPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.SignInPage.SignInPage"
         android:label="fragment_sign_in_page"
         tools:layout="@layout/fragment_sign_in_page" >
         <action
