@@ -3,7 +3,7 @@ package com.huseyinozkoc.bitcointicker.di
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.huseyinozkoc.bitcointicker.data.repository.FirebaseRepositoryImpl
-import com.huseyinozkoc.bitcointicker.domain.FirebaseRepository
+import com.huseyinozkoc.bitcointicker.domain.repository.FirebaseRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

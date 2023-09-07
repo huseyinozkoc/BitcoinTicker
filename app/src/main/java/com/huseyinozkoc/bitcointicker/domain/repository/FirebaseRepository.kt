@@ -1,4 +1,4 @@
-package com.huseyinozkoc.bitcointicker.domain
+package com.huseyinozkoc.bitcointicker.domain.repository
 
 import com.google.firebase.auth.AuthResult
 import com.huseyinozkoc.bitcointicker.common.Resource

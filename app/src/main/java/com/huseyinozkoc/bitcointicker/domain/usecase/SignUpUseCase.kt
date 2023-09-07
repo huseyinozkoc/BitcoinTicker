@@ -1,6 +1,6 @@
 package com.huseyinozkoc.bitcointicker.domain.usecase
 
-import com.huseyinozkoc.bitcointicker.domain.FirebaseRepository
+import com.huseyinozkoc.bitcointicker.domain.repository.FirebaseRepository
 import javax.inject.Inject
 
 class SignUpUseCase @Inject constructor(private val firebaseRepository: FirebaseRepository) {

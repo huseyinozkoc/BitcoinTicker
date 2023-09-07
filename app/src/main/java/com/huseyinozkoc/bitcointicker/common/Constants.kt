@@ -6,4 +6,5 @@ object Constants {
     const val COIN_MARKETS ="coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false"
     const val COIN_BY_ID ="coins/{id}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false"
 
+    const val NA = "N/A"
 }

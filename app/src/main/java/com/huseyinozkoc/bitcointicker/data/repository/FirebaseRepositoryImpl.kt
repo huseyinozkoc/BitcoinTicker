@@ -4,7 +4,7 @@ import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.huseyinozkoc.bitcointicker.common.Resource
-import com.huseyinozkoc.bitcointicker.domain.FirebaseRepository
+import com.huseyinozkoc.bitcointicker.domain.repository.FirebaseRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
