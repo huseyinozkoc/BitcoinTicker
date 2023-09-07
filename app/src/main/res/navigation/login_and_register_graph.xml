@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_and_register_graph"
+    app:startDestination="@id/splashPage">
+
+    <fragment
+        android:id="@+id/splashPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.SplashPage"
+        android:label="fragment_splash_page"
+        tools:layout="@layout/fragment_splash_page" >
+        <action
+            android:id="@+id/action_splashPage_to_signInPage"
+            app:destination="@id/signInPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.SignInPage"
+        android:label="fragment_sign_in_page"
+        tools:layout="@layout/fragment_sign_in_page" >
+        <action
+            android:id="@+id/action_signInPage_to_signUpPage"
+            app:destination="@id/signUpPage" />
+        <action
+            android:id="@+id/action_signInPage_to_home_graph"
+            app:destination="@id/home_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.SignUpPage"
+        android:label="fragment_sign_up_page"
+        tools:layout="@layout/fragment_sign_up_page" >
+        <action
+            android:id="@+id/action_signUpPage_to_signInPage"
+            app:destination="@id/signInPage" />
+    </fragment>
+    <include app:graph="@navigation/home_graph" />
+</navigation>

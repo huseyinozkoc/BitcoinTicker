@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_detailPage"
+            app:destination="@id/detailPage" />
+        <action
+            android:id="@+id/action_homePage_to_favoritesPage"
+            app:destination="@id/favoritesPage" />
+        <action
+            android:id="@+id/action_homePage_to_searchPage"
+            app:destination="@id/searchPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.DetailPage"
+        android:label="fragment_detail_page"
+        tools:layout="@layout/fragment_detail_page" />
+    <fragment
+        android:id="@+id/searchPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.SearchPage"
+        android:label="fragment_search_page"
+        tools:layout="@layout/fragment_search_page" >
+        <action
+            android:id="@+id/action_searchPage_to_detailPage"
+            app:destination="@id/detailPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.FavoritesPage"
+        android:label="fragment_favorites_page"
+        tools:layout="@layout/fragment_favorites_page" >
+        <action
+            android:id="@+id/action_favoritesPage_to_detailPage"
+            app:destination="@id/detailPage" />
+    </fragment>
+</navigation>
