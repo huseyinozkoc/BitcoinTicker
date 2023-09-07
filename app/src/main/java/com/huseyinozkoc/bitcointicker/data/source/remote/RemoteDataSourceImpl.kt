@@ -1,4 +1,4 @@
-package com.huseyinozkoc.bitcointicker.data.source
+package com.huseyinozkoc.bitcointicker.data.source.remote
 
 import com.huseyinozkoc.bitcointicker.domain.source.RemoteDataSource
 import javax.inject.Inject

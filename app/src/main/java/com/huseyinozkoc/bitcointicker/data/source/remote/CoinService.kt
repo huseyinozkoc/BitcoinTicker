@@ -1,4 +1,4 @@
-package com.huseyinozkoc.bitcointicker.data.source
+package com.huseyinozkoc.bitcointicker.data.source.remote
 
 import com.huseyinozkoc.bitcointicker.common.Constants.COIN_BY_ID
 import com.huseyinozkoc.bitcointicker.common.Constants.COIN_LIST

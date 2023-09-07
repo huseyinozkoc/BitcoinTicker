@@ -1,4 +1,4 @@
-package com.huseyinozkoc.bitcointicker.data
+package com.huseyinozkoc.bitcointicker.data.repository
 
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth

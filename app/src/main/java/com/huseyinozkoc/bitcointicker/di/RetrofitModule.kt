@@ -1,7 +1,7 @@
 package com.huseyinozkoc.bitcointicker.di
 
 import com.huseyinozkoc.bitcointicker.common.Constants.BASE_URL
-import com.huseyinozkoc.bitcointicker.data.source.CoinService
+import com.huseyinozkoc.bitcointicker.data.source.remote.CoinService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
