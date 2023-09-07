@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -55,6 +56,11 @@ dependencies {
 
     // Lottie Animation
     implementation "com.airbnb.android:lottie:3.4.0"
+
+    //Firebase( For Authentication and Firestore )
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
 
 
 }
