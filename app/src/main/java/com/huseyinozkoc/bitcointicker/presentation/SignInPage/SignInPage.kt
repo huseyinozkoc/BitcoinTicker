@@ -14,6 +14,7 @@ import com.huseyinozkoc.bitcointicker.common.viewBinding
 import com.huseyinozkoc.bitcointicker.databinding.FragmentSignInPageBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 
 @AndroidEntryPoint
 class SignInPage : Fragment() {
@@ -76,10 +77,10 @@ class SignInPage : Fragment() {
                                 findNavController().navigate(R.id.action_signInPage_to_home_graph)
                             }
                             is Resource.Error -> {
-                                android.widget.Toast.makeText(
-                                    activity,
+                                Snackbar.make(
+                                    requireView(),
                                     "Girişte Bir Hata ile karşılaşıldı {${result.throwable.message.toString() + result.throwable.cause.toString()}}",
-                                    android.widget.Toast.LENGTH_LONG
+                                    Snackbar.LENGTH_SHORT
                                 ).show()
 
                             }

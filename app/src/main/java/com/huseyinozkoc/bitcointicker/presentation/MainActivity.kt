@@ -1,7 +1,8 @@
-package com.huseyinozkoc.bitcointicker
+package com.huseyinozkoc.bitcointicker.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.huseyinozkoc.bitcointicker.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
