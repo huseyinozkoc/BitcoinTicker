@@ -16,9 +16,12 @@
 ## 📍 Overview
 
 Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and password, and you're in. See live coin prices and their ups and downs instantly. Choose your favorites, get notifications, and stay in the crypto loop. It's your simple ticket to the crypto world.
+![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)
+
 
 ---
 ## 🧩 Modules
+![clean_art](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/4c9180c6-77bb-4330-8835-94056f6d5994)
 
 <details closed><summary>Common</summary>
   
@@ -84,6 +87,8 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 
 ## ⚙️ Gradle Dependencies
+![gradle](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/8c1f3ead-20fa-4759-8e74-d7352fbfd2f3)
+
 
 | Library                                 | Description                                                                                                                                      |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -116,5 +121,10 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 | **room-ktx:2.4.3**                    | Kotlin-specific functionalities for Room Database.                                                                                              |
 | **ssp-android:1.1.0**                 | Utility library for defining consistent and scalable spacing and dimensions in Android layouts.                                                |
 | **landscapist-glide:2.0.0**           | Kotlin-first image loading library for Android, simplifying image loading and caching.                                                        |
+
+---
+## 📂 Project Structure
+![project strure](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/f177f96e-15ed-492f-b31d-af046f630916)
+
 
 ---
