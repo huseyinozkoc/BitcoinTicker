@@ -2,4 +2,7 @@
     <string name="app_name">BitcoinTicker</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_favourites_successful">Başarıyla favorilere eklendi.</string>
+    <string name="something_went_wrong">Yanlış bir şey oldu!</string>
+    <string name="delete_from_favourite">Başarıyla favorilerden kaldırıldı!</string>
 </resources>

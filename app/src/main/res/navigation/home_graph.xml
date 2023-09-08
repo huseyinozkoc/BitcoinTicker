@@ -12,11 +12,7 @@
         tools:layout="@layout/fragment_home_page">
         <action
             android:id="@+id/action_homePage_to_detailPage"
-            app:destination="@id/detailPage" >
-
-            <argument
-                android:name="coinId"
-                app:argType="string" />
+            app:destination="@id/detailPage">
 
         </action>
         <action
@@ -27,16 +23,23 @@
             app:destination="@id/searchPage" />
 
 
-
     </fragment>
+
     <fragment
         android:id="@+id/detailPage"
         android:name="com.huseyinozkoc.bitcointicker.presentation.DetailPage.DetailPage"
         android:label="fragment_detail_page"
-        tools:layout="@layout/fragment_detail_page" />
-    <argument
-        android:name="coinId"
-        app:argType="string" />
+        tools:layout="@layout/fragment_detail_page" >
+        <argument
+            android:name="coinId"
+            app:argType="string" />
+
+    </fragment>
+
+
+
+
+
     <fragment
         android:id="@+id/searchPage"
         android:name="com.huseyinozkoc.bitcointicker.presentation.SearchPage"
@@ -46,13 +49,19 @@
             android:id="@+id/action_searchPage_to_detailPage"
             app:destination="@id/detailPage" />
     </fragment>
+
+
     <fragment
         android:id="@+id/favoritesPage"
-        android:name="com.huseyinozkoc.bitcointicker.presentation.FavoritesPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.FavoritesPage.FavoritesPage"
         android:label="fragment_favorites_page"
         tools:layout="@layout/fragment_favorites_page">
         <action
             android:id="@+id/action_favoritesPage_to_detailPage"
             app:destination="@id/detailPage" />
     </fragment>
+
+
+
+
 </navigation>

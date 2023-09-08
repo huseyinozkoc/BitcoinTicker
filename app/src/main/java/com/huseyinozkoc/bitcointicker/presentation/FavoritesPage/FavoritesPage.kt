@@ -1,4 +1,4 @@
-package com.huseyinozkoc.bitcointicker.presentation
+package com.huseyinozkoc.bitcointicker.presentation.FavoritesPage
 
 import android.os.Bundle
 import android.view.LayoutInflater
