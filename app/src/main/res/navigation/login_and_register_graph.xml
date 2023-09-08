@@ -12,7 +12,12 @@
         tools:layout="@layout/fragment_splash_page" >
         <action
             android:id="@+id/action_splashPage_to_signInPage"
-            app:destination="@id/signInPage" />
+            app:destination="@id/signInPage"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/signInPage"
@@ -21,10 +26,20 @@
         tools:layout="@layout/fragment_sign_in_page" >
         <action
             android:id="@+id/action_signInPage_to_signUpPage"
-            app:destination="@id/signUpPage" />
+            app:destination="@id/signUpPage"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
         <action
             android:id="@+id/action_signInPage_to_home_graph"
-            app:destination="@id/home_graph" />
+            app:destination="@id/home_graph"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/signUpPage"
@@ -33,7 +48,12 @@
         tools:layout="@layout/fragment_sign_up_page" >
         <action
             android:id="@+id/action_signUpPage_to_signInPage"
-            app:destination="@id/signInPage" />
+            app:destination="@id/signInPage"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
     </fragment>
     <include app:graph="@navigation/home_graph" />
 </navigation>
