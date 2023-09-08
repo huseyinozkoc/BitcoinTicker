@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".presentation.SplashPage.SplashPage"
-    android:background="@color/md_purple_500"
+    android:background="@color/md_deep_purple_A100"
     >
 
 
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/splash_animation"
+        app:lottie_rawRes="@raw/animation_x2"
         app:lottie_repeatMode="reverse" />
 
 

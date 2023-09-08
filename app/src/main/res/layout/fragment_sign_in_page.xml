@@ -5,13 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".presentation.SignInPage.SignInPage"
-    android:background="@color/md_purple_500"
+    android:background="@color/md_deep_purple_A100"
     >
 
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/sign_in_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="16dp"
         app:cardCornerRadius="32dp"
         app:cardElevation="15dp"
@@ -19,13 +32,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/md_black_1000"
+        app:strokeColor="@color/md_deep_purple_A100"
         app:strokeWidth="2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/emailTextField"
@@ -119,10 +131,12 @@
                 android:id="@+id/forgotPasswordButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/pacifico"
                 android:text="Forget Password?"
-                android:textStyle="bold"
                 android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/buttonSignIn">

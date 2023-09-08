@@ -5,14 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".presentation.SignUpPage.SignUpPage"
-    android:background="@color/md_purple_500"
+    android:background="@color/md_deep_purple_A100"
     >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/sign_up_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="16dp"
         app:cardCornerRadius="32dp"
         app:cardElevation="15dp"
@@ -20,13 +32,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/md_black_1000"
+        app:strokeColor="@color/md_deep_purple_A100"
         app:strokeWidth="2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/usernameTextField"
@@ -117,6 +128,7 @@
         android:layout_marginTop="8dp"
         android:text="Already Member?"
         android:textColor="@color/md_black_1000"
+        android:fontFamily="@font/pacifico"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

@@ -28,8 +28,8 @@ fun priceChangePercentage24h(
 
 @BindingAdapter("setIncreaseDecrease")
 fun setIncreaseDecrease(imageView: ImageView, price: Double) {
-    if (price.toString().contains("-")) imageView.setImageResource(R.drawable.ic_baseline_email_24)
-    else imageView.setImageResource(R.drawable.ic_baseline_lock_24)
+    if (price.toString().contains("-")) imageView.setImageResource(R.drawable.decrease)
+    else imageView.setImageResource(R.drawable.increase)
 }
 
 @BindingAdapter("currentPrice")

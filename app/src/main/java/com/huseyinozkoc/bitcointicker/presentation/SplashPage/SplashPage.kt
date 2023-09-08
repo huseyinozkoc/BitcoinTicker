@@ -5,9 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.huseyinozkoc.bitcointicker.R
 import com.huseyinozkoc.bitcointicker.common.viewBinding
 import com.huseyinozkoc.bitcointicker.databinding.FragmentSplashPageBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 
 class SplashPage : Fragment() {
@@ -27,6 +32,11 @@ class SplashPage : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        CoroutineScope(Dispatchers.Main).launch {
+
+            delay(5000)
+            findNavController().navigate(R.id.action_splashPage_to_signInPage)
+        }
 
 
     }

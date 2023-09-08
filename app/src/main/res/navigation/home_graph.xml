@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@+id/searchPage"
-        android:name="com.huseyinozkoc.bitcointicker.presentation.SearchPage"
+        android:name="com.huseyinozkoc.bitcointicker.presentation.SearchPage.SearchPage"
         android:label="fragment_search_page"
         tools:layout="@layout/fragment_search_page">
         <action

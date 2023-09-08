@@ -1,84 +1,90 @@
-package com.huseyinozkoc.bitcointicker.presentation.HomePage
+package com.huseyinozkoc.bitcointicker.presentation.SearchPage
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import androidx.work.WorkInfo
 import com.huseyinozkoc.bitcointicker.R
 import com.huseyinozkoc.bitcointicker.common.*
-import com.huseyinozkoc.bitcointicker.databinding.FragmentHomePageBinding
-import com.huseyinozkoc.bitcointicker.presentation.MainActivity
+import com.huseyinozkoc.bitcointicker.databinding.FragmentSearchPageBinding
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 
 
 @AndroidEntryPoint
-class HomePage : Fragment() {
+class SearchPage : Fragment() {
 
-    private val binding by viewBinding(FragmentHomePageBinding::bind)
+    private val binding by viewBinding(FragmentSearchPageBinding::bind)
 
-    private val homePageViewModel: HomePageViewModel by viewModels()
+    private val searchCoinViewModel: SearchPageViewModel by viewModels()
 
-    private val coinsAdapter by lazy { CoinsAdapter() }
+    private val searchCoinAdapter by lazy { SearchCoinAdapter() }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false)
+        return inflater.inflate(R.layout.fragment_search_page, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         initUI()
-        checkData()
+        collectData()
 
     }
+
 
     private fun initUI() {
+
         with(binding) {
-            recyclerView.adapter = coinsAdapter
 
-
-            imgSearch.setOnClickListener {
-                findNavController().navigate(R.id.action_homePage_to_searchPage)
+            imgBack.setOnClickListener {
+                findNavController().navigateUp()
             }
 
-            imgSignOut.setOnClickListener {
-                homePageViewModel.signOut()
-                val intent = Intent(requireActivity(), MainActivity::class.java)
-                startActivity(intent)
+            rvSearchCoin.adapter = searchCoinAdapter
+
+            searchCoinAdapter.onCoinClick = {
+                val action = SearchPageDirections.actionSearchPageToDetailPage(it)
+                findNavController().navigate(action)
             }
 
+            searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    query?.let {
+                        searchCoinViewModel.searchCoin(it)
+                    }
+                    return false
+                }
+
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    return false
+                }
+            })
         }
-
-
     }
 
-    private fun checkData() {
+    private fun collectData() {
 
         with(binding) {
 
-            with(homePageViewModel) {
+            with(searchCoinViewModel) {
 
                 viewLifecycleOwner.lifecycleScope.launchWhenStarted {
 
-                    currentUser.collect { result ->
-
+                    coinList.collect { result ->
                         when (result) {
                             is Resource.Loading -> progressBar.visible()
                             is Resource.Success -> {
                                 progressBar.gone()
-                                tvUsername.text = result.data.email
+                                searchCoinAdapter.submitList(result.data)
                             }
                             is Resource.Error -> {
                                 progressBar.gone()
@@ -86,23 +92,24 @@ class HomePage : Fragment() {
                             }
                         }
                     }
+                }
 
-                    coinMarketsFlow.collect { result ->
+                viewLifecycleOwner.lifecycleScope.launchWhenStarted {
 
+                    coinListFlow.collect { result ->
                         when (result) {
                             is Resource.Loading -> progressBar.visible()
                             is Resource.Success -> {
                                 progressBar.gone()
-                                coinsAdapter.submitList(result.data)
+                                searchCoinAdapter.submitList(result.data)
                             }
                             is Resource.Error -> {
                                 progressBar.gone()
-                                //requireView().showSnackbar(result.throwable.message.toString())
+                                requireView().showSnackbar(result.throwable.message.toString())
                             }
                         }
                     }
                 }
-
             }
         }
     }
