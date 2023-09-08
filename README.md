@@ -145,4 +145,12 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 ---
 ## 🗺  Firebase Console
 
+| Firebase Authentication         |  Firebase Firestore | Firebase Analytics |  Firebase Crashlytics |
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+ ![1](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ec18dabb-56b6-4530-9e45-075bc5680fd6)| ![2](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/2c745d22-b63c-4a1f-9ecd-cdac60e2bc66)| ![3](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/24440e5f-0996-492b-af0a-6a403eb13607)| ![4](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/a1c87278-55fc-4a50-b13b-21e97a3291d2) |
+
+ | Firebase Performance(APM)       |   |  |   |
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![5](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/927bf8bb-1b34-4ee3-ade4-1b5074c59570) | | | |
+
 ---
