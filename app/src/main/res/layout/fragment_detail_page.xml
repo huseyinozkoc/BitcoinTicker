@@ -34,7 +34,7 @@
                 setImage="@{model.image}"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_100sdp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 android:contentDescription="Coin Image"
                 app:layout_constraintStart_toStartOf="parent"
@@ -46,16 +46,15 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="42dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@{model.name}"
                 android:textColor="@color/md_yellow_800"
                 android:textSize="@dimen/_20ssp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/cv_second"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/img_coin"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_coin"
                 tools:text="Bitcoin" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -67,7 +66,6 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_8ssp"
                 android:textStyle="italic"
-                app:layout_constraintBottom_toTopOf="@+id/tv_current_price2"
                 app:layout_constraintEnd_toEndOf="@+id/tv_hashing_algorithm2"
                 app:layout_constraintStart_toStartOf="@+id/tv_hashing_algorithm2"
                 app:layout_constraintTop_toBottomOf="@+id/tv_hashing_algorithm2"
@@ -106,7 +104,7 @@
                 android:id="@+id/tv_current_price2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginTop="32dp"
                 android:text="Current Price"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_20ssp"
@@ -114,7 +112,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/tv_current_price"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_hashing_algorithm" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_favourite" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tv_price_change_percentage_in_24h"
@@ -200,27 +198,26 @@
                 android:id="@+id/btn_favourite"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_34sdp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="8dp"
                 android:backgroundTint="@color/md_red_700"
-                app:cornerRadius="@dimen/_16sdp"
                 android:text="Add"
+                app:cornerRadius="@dimen/_16sdp"
                 app:icon="@drawable/ic_baseline_favorite_24"
                 app:iconGravity="end"
-                app:layout_constraintEnd_toStartOf="@+id/cv_second"
-                app:layout_constraintStart_toEndOf="@+id/img_coin"
+                app:layout_constraintEnd_toEndOf="@+id/tv_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cv_second"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="8dp"
                 app:cardCornerRadius="@dimen/_10sdp"
                 app:cardElevation="@dimen/_4sdp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/tv_name"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4">
+                app:layout_constraintStart_toEndOf="@+id/img_coin"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/til_second"
@@ -295,9 +292,9 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Refresh Time"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toTopOf="@+id/cv_second"
                 app:layout_constraintEnd_toEndOf="@+id/cv_second"
                 app:layout_constraintStart_toStartOf="@+id/cv_second"
                 app:layout_constraintTop_toBottomOf="@+id/imageView4" />
