@@ -20,6 +20,17 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 
 ---
+## 🚀Screenshots
+
+| Splash Screen           |  SignIn Screen | SignUp Screen |  Home Screen  |
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+ ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |  ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
+
+**All Screen Of The Bitcoin Ticker Application**
+
+
+---
+
 ## 🧩 Modules
 ![clean_art](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/4c9180c6-77bb-4330-8835-94056f6d5994)
 
