@@ -8,4 +8,10 @@ object Constants {
     const val FAVORITES_COLLECTION = "favorites"
     const val COIN_ID = "coinId"
     const val NA = "N/A"
+    const val SYNC_DATA_WORK_NAME = "syncDataWorkName"
+    const val SYNC_DATA = "syncData"
+    const val TITLE = "Bitcoin Ticker"
+    const val DESCRIPTION = "Favori coinlerinin fiyatlarında değişim oldu! Görmek ister misin?"
+    const val CHANNEL_ID = "MyTask"
+    const val CHANNEL_NAME = "MyTaskChannel"
 }

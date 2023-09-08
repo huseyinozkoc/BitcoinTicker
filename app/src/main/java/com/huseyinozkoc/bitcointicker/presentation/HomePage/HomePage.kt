@@ -103,6 +103,19 @@ class HomePage : Fragment() {
                     }
                 }
 
+                workInfo.observe(viewLifecycleOwner) { listOfWorkInfo ->
+
+                    if (listOfWorkInfo == null || listOfWorkInfo.isEmpty()) {
+                        return@observe
+                    }
+
+                    val workInfo: WorkInfo = listOfWorkInfo[0]
+
+                    if (workInfo.state == WorkInfo.State.ENQUEUED) {
+                        coinMarkets()
+                    }
+                }
+
             }
         }
     }

@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.huseyinozkoc.bitcointicker.common.Resource
 import com.huseyinozkoc.bitcointicker.domain.model.CoinMarkets
 import com.huseyinozkoc.bitcointicker.domain.usecase.SignOutUseCase
+import com.huseyinozkoc.bitcointicker.domain.usecase.WorkerUseCase
 import com.huseyinozkoc.bitcointicker.domain.usecase.coins.GetCoinMarketUseCase
 import com.huseyinozkoc.bitcointicker.domain.usecase.coins.GetUserUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -17,7 +18,8 @@ import javax.inject.Inject
 class HomePageViewModel @Inject constructor(
     private val getCoinMarketsUseCase: GetCoinMarketUseCase,
     private val signOutUseCase: SignOutUseCase,
-    private val getUserUseCase: GetUserUseCase
+    private val getUserUseCase: GetUserUseCase,
+    workerUseCase: WorkerUseCase
 ) : ViewModel() {
 
     private val _coinMarketsFlow = MutableStateFlow<Resource<List<CoinMarkets>>>(Resource.Loading)
@@ -38,6 +40,8 @@ class HomePageViewModel @Inject constructor(
     fun signOut() = signOutUseCase.invoke()
 
     val currentUser = getUserUseCase.invoke()
+
+    val workInfo = workerUseCase.invoke()
 
 
 }
