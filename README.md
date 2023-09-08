@@ -2,11 +2,11 @@
 ## 📒 Table of Contents
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
+- [🚀 Screenshots](#-Screenshots)
 -  [🧩 Modules](#-modules)
 - [⚙️ Gradle Dependencies](#-features)
 - [📂 Project Structure](#project-structure)
-- [🚀 Getting Started](#-getting-started)
-- [🗺 Roadmap](#-roadmap)
+- [🗺 Firebase Console ](#-getting-started)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
@@ -141,5 +141,8 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 ## 📂 Project Structure
 ![project strure](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/f177f96e-15ed-492f-b31d-af046f630916)
 
+
+---
+## 🗺  Firebase Console
 
 ---
