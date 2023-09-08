@@ -32,7 +32,6 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 **All Screen Of The Bitcoin Ticker Application**
 
-
 ---
 
 ## 🧩 Modules
@@ -103,6 +102,18 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 ## ⚙️ Gradle Dependencies
 ![gradle](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/8c1f3ead-20fa-4759-8e74-d7352fbfd2f3)
+
+
+- MVVM with Clean Architecture
+ - Coroutines & Flow
+ - Navigation Components
+ - Hilt for Dependency Injection
+ - Retrofit
+ - Room Database
+ - Glide
+ - WorkManager
+ - DataStore
+ - Internal Notification
 
 
 | Library                                 | Description                                                                                                                                      |
