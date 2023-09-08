@@ -1,7 +1,3 @@
-# BitcoinTicker
-BitcoinTicker
-
----
 
 ## 📒 Table of Contents
 - [📒 Table of Contents](#-table-of-contents)
@@ -19,7 +15,7 @@ BitcoinTicker
 
 ## 📍 Overview
 
-The project is a Machine Learning Operations (MLOps) course that includes various code snippets and examples for building and deploying machine learning models. It covers topics such as data preprocessing, model training and evaluation, web application development, and Docker containerization. The project's purpose is to provide a comprehensive guide to implementing best practices in managing and deploying machine learning models, enabling developers to build efficient and scalable ML pipelines. Its value proposition lies in offering practical examples and templates that can be easily adapted and extended in real-world MLOps projects.
+Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and password, and you're in. See live coin prices and their ups and downs instantly. Choose your favorites, get notifications, and stay in the crypto loop. It's your simple ticket to the crypto world.
 
 ---
 ## 🧩 Modules
