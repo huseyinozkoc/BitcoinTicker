@@ -114,6 +114,7 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
  - WorkManager
  - DataStore
  - Internal Notification
+ - [API Link](https://www.coingecko.com/en/api)
 
 
 | Library                                 | Description                                                                                                                                      |
