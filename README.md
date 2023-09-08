@@ -26,6 +26,10 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
  ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |  ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
 
+ | Detail Screen          |  Favorite Screen | Search Screen |  |
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+ ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |  ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
+
 **All Screen Of The Bitcoin Ticker Application**
 
 
