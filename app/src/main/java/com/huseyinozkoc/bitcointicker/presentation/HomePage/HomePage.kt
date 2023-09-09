@@ -15,8 +15,10 @@ import com.huseyinozkoc.bitcointicker.R
 import com.huseyinozkoc.bitcointicker.common.*
 import com.huseyinozkoc.bitcointicker.databinding.FragmentHomePageBinding
 import com.huseyinozkoc.bitcointicker.presentation.MainActivity
+import com.huseyinozkoc.bitcointicker.utils.UserManagerDataStorage
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
+import javax.inject.Inject
 
 
 @AndroidEntryPoint
@@ -27,6 +29,9 @@ class HomePage : Fragment() {
     private val homePageViewModel: HomePageViewModel by viewModels()
 
     private val coinsAdapter by lazy { CoinsAdapter() }
+
+    @Inject
+    lateinit var userManager: UserManagerDataStorage
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -79,6 +84,7 @@ class HomePage : Fragment() {
                             is Resource.Success -> {
                                 progressBar.gone()
                                 tvUsername.text = result.data.email
+                                result.data.email?.let { userManager.storeUserEmail(it) }
                             }
                             is Resource.Error -> {
                                 progressBar.gone()

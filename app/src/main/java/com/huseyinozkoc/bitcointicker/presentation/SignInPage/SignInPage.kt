@@ -16,6 +16,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.huseyinozkoc.bitcointicker.utils.UserManagerDataStorage
 import javax.inject.Inject
 
 @AndroidEntryPoint
