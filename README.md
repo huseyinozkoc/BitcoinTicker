@@ -24,11 +24,11 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 | Splash Screen           |  SignIn Screen | SignUp Screen |  Home Screen  |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
- ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |  ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
+ ![splash](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/0e6bc2a3-52e2-49ea-bf8e-03656322fc7d) |  ![sign-in](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/eb8ef1e6-2283-456e-aee7-292250a13dce) |![sign-up](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/7218f4b7-6534-4f40-975f-2d8a826ad228) | ![home](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/51960a4c-4705-42c7-8d30-e7b09daecc20) |
 
  | Detail Screen          |  Favorite Screen | Search Screen |  |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
- ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |  ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)| ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
+![detail](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/7dc2a16d-f352-474b-b2d1-a366c918de0d) |  ![favorites](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ba710bf2-bfd8-4b5b-82d1-3ade2ef3a542) |![search](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/658989ec-e4bc-4aac-8466-7ab7103bcc36) | ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
 
 **All Screen Of The Bitcoin Ticker Application**
 
