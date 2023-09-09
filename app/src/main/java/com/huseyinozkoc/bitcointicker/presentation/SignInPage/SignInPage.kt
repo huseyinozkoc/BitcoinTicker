@@ -15,6 +15,8 @@ import com.huseyinozkoc.bitcointicker.databinding.FragmentSignInPageBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.analytics.FirebaseAnalytics
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class SignInPage : Fragment() {
@@ -22,6 +24,9 @@ class SignInPage : Fragment() {
     private val binding by viewBinding(FragmentSignInPageBinding::bind)
 
     private val signInViewModel: SignInViewModel by viewModels()
+
+    @Inject
+    lateinit var analytics: FirebaseAnalytics
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -74,6 +79,11 @@ class SignInPage : Fragment() {
                                     "Başarıyla giriş yapıldı.",
                                     android.widget.Toast.LENGTH_LONG
                                 ).show()
+
+                                val bundle = Bundle()
+                                bundle.putString(FirebaseAnalytics.Param.METHOD, "CUSTOM")
+                                analytics.logEvent(FirebaseAnalytics.Event.LOGIN, bundle)
+
                                 findNavController().navigate(R.id.action_signInPage_to_home_graph)
                             }
                             is Resource.Error -> {
