@@ -18,23 +18,22 @@
 Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and password, and you're in. See live coin prices and their ups and downs instantly. Choose your favorites, get notifications, and stay in the crypto loop. It's your simple ticket to the crypto world.
 ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/d042bf43-6f32-44c7-973f-f56f0e88e9ec)
 
----
 ## 🚀Screenshots
 
 | Splash Screen           |  SignIn Screen | SignUp Screen |  Home Screen  |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
- ![splash](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/0e6bc2a3-52e2-49ea-bf8e-03656322fc7d) |  ![sign-in](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/eb8ef1e6-2283-456e-aee7-292250a13dce) |![sign-up](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/7218f4b7-6534-4f40-975f-2d8a826ad228) | ![home](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/51960a4c-4705-42c7-8d30-e7b09daecc20) |
+ ![splash](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/75ed5f17-9f15-4f53-9043-d95c83ecb44b) |  ![sign-in](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/856e43ae-355a-4110-ba04-a4431d66bc54) |![sign-up](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/d6584b04-e7cc-445d-a5b1-359a497d281b) | ![home](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/08ecfed5-b42e-4b80-821a-383de4f10d19) |
 
  | Detail Screen          |  Favorite Screen | Search Screen |  |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![detail](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/7dc2a16d-f352-474b-b2d1-a366c918de0d) |  ![favorites](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ba710bf2-bfd8-4b5b-82d1-3ade2ef3a542) |![search](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/658989ec-e4bc-4aac-8466-7ab7103bcc36) | ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15) |
+![detail](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/aab18aba-14a0-4b33-9d7d-7934d36496cc) | ![favorites](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/b3df4d9e-f413-4290-b1d2-e3809ebc2d2d) | ![search](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/0d82e4b1-fdfc-4975-ad08-43a81bc81c5d) | ![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/d042bf43-6f32-44c7-973f-f56f0e88e9ec) |
 
 **All Screen Of The Bitcoin Ticker Application**
 
 ---
 
 ## 🧩 Modules
-![clean_art](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/4c9180c6-77bb-4330-8835-94056f6d5994)
+![clean_art](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/b17f3b7b-510d-4900-a19e-02110ec1ef69)
 
 <details closed><summary>Common</summary>
   
@@ -100,8 +99,7 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 
 ## ⚙️ Gradle Dependencies
-![gradle](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/8c1f3ead-20fa-4759-8e74-d7352fbfd2f3)
-
+![gradle](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/dbf4a339-1c0c-43ff-b1bd-bf05cd60ba8c)
 
 - MVVM with Clean Architecture
  - Coroutines & Flow
@@ -150,18 +148,17 @@ Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and passw
 
 ---
 ## 📂 Project Structure
-![project strure](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/f177f96e-15ed-492f-b31d-af046f630916)
-
+![project strure](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/e26f8c94-5baa-48b0-8775-752e963e8634)
 
 ---
 ## 🗺  Firebase Console
 
 | Firebase Authentication         |  Firebase Firestore | Firebase Analytics |  Firebase Crashlytics |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
- ![1](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ec18dabb-56b6-4530-9e45-075bc5680fd6)| ![2](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/2c745d22-b63c-4a1f-9ecd-cdac60e2bc66)| ![3](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/24440e5f-0996-492b-af0a-6a403eb13607)| ![4](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/a1c87278-55fc-4a50-b13b-21e97a3291d2) |
+ ![1](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/9fead16a-3dc0-4a74-8331-e81ff114fed7)| ![2](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/81afe394-1a1a-47bb-b1f2-8213a1ee226e)| ![3](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/9d5f0b43-c02e-4dc4-b077-96593c3ceb0f) | ![4](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/d9d79aa9-9dde-4d02-8753-3dc997ad19b0) |
 
  | Firebase Performance(APM)       |   |  |   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![5](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/927bf8bb-1b34-4ee3-ade4-1b5074c59570) | | | |
+![5](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/d014c2ed-8bd4-41b2-b204-68d542fa1bcb) | | | |
 
 ---
