@@ -16,8 +16,7 @@
 ## 📍 Overview
 
 Bitcoin Ticker is your easy-to-use crypto app. Sign up with your email and password, and you're in. See live coin prices and their ups and downs instantly. Choose your favorites, get notifications, and stay in the crypto loop. It's your simple ticket to the crypto world.
-![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/ed7e4e37-9082-4b15-8d73-f2e02a2f5b15)
-
+![icon](https://github.com/huseyinozkoc/BitcoinTicker/assets/48124105/d042bf43-6f32-44c7-973f-f56f0e88e9ec)
 
 ---
 ## 🚀Screenshots
